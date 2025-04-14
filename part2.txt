@@ -1,1 +1,12 @@
-Fill in the passphrases here.
+Passphrase 1: WongAvery
+Passphrase 2: iHateC++
+Passphrase 3: HTMLRules
+Passphrase 4: JavaScriptRocks
+Passphrase 5: ShraviBeatsReact
+Passphrase 6: ThisIsJSyay
+Passphrase 7: SofiaWasHere
+Passphrase 8: coolcoolcool3x
+Passphrase 9: 2020_sucked
+Passphrase 10: listenToPetalcore
+Passphrase 11: ElaineFirst
+Passphrase 12: iHeartWebDev
