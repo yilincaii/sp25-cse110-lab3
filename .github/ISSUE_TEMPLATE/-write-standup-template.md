@@ -8,23 +8,22 @@ assignees: ''
 ---
 
 ---
-name: Lab3 subtask: Write standup template
-about: add standup.md standup notes template to repository
-labels: doc, agile
-assignees: <your GitHub user name>
----
+name: Lab3 Subtask: Implementing Layout and Responsiveness
+about: Implementing Flexbox, Grid layouts and adding media queries in CSS
+labels: css
+assignees: <yilincaii>
+--- 
 
-## Assignment title  
-Write the standup.md template
+## Task title  
+Implementing Layout and Responsiveness
 
 ## Task description  
-Create a new 'standup.md' in the project root directory, with template content including:  
-- Date  
-- Yesterday's accomplishments  
-- Today's plan  
-- Obstructions  
+- Flexbox: create container, ≥3 child elements, set ≥3 flex attributes  
+- Grid: create container, ≥3 child elements, set ≥3 grid attributes  
+- Media Query: Adjust the layout or fonts based on the screen width.  
 
 ## Completion criteria  
-- [ ] File 'standup.md' created  
-- [ ] Contains four required fields  
-- [ ] Push to master branch
+- [ ] Flexbox example works fine  
+- [ ] Grid example works fine  
+- [ ] Media queries work at different widths  
+- [ ] Third party fonts loaded and applied
