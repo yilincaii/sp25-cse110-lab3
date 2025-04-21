@@ -7,25 +7,22 @@ assignees: ''
 
 ---
 
----
-name: Lab3 subtask: Create custom labels
-about: Create the custom Labels needed for Lab3 in the GitHub repository
-labels: agile
+----
+name: Lab3 subtask: Add Issue template
+about: add Lab3 task Issue template in .github/ISSUE_TEMPLATE
+labels: agile, doc
 assignees: <yilincaii>
---- - - - - - - - - - - - - - - - - - - - - - -
+---
 
 ## Task title  
-Create custom labels
+Add the Issue template
 
 ## Task description  
-On the Repository Settings → Labels page, create the following new custom label:  
-- css  
-- css  
-- doc  
-- css agile doc  
+Create .github/ISSUE_TEMPLATE/lab3-task.mdin the repository root with:  
+- YAML prefixes (name, about, labels, assignees)  
+- Task title, task description, completion criteria Three main blocks  
 
-## Completion criteria  
-- [ ] tag css created  
-- [ ] tag agile created  
-- [ ] tag doc created  
-- [ ] tag bug created
+## Task title, task description, and completion criteria.  
+- [ ] File .github/ISSUE_TEMPLATE/lab3-task.md created  
+- [ ] Template content conforms to the specification  
+- [ ] Push to master branch
