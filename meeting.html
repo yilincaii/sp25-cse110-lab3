@@ -4,19 +4,35 @@
     <meta charset="UTF-8" />
     <title>Team Meeting Minutes</title>
     <link rel="icon" href="favicon.ico" />
+    <!-- 1) external CSS -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- 2) inner exm -->
+    <style>
+      nav a {
+        text-decoration: none;
+        margin: 0 0.5rem; /* rem  */
+      }
+      h3 {
+        margin-bottom: 0.5rem;
+      }
+    </style>
+
     <meta name="description" content="Meeting notes for Pomodoro brainstorm team" />
   </head>
   <body>
     <header>
-      <h1>Pomodoro Timer Project</h1>
+      <!-- 3) inlinestyle  -->
+      <h1 style="font-size: 2.5rem; color: #e74c3c;">
+        Pomodoro Timer Project
+      </h1>
       <nav>
-        <a href="#agenda">Agenda</a> | 
-        <a href="#audio">Audio</a> | 
+        <a href="#agenda">Agenda</a> |
+        <a href="#audio">Audio</a> |
         <a href="#video">Video</a>
       </nav>
       <hr />
-    </header>
-  
+    </header>  
 <main>
     <section id="agenda">
         <h2>Team Meeting Minutes</h2>
@@ -50,25 +66,25 @@
     </section>
     
     <section>
-        <h3>Teambonding Photo</h3>
-        <img src="teambonding.jpg" alt="Screenshot of team bonding activity during the meeting" />
-    </section>
+      <h3>Teambonding Photo</h3>
+      <img src="screenshots/Screenshot1.png" alt="Screenshot of team bonding activity during the meeting" />
+  </section>
     
     <section id="audio">
-        <h3>Audio Recording</h3>
-        <audio controls>
-        <source src="meeting-audio.mp3" type="audio/mpeg" />
-        Your browser does not support the audio element.
-        </audio>
-    </section>
-    
-    <section id="video">
-        <h3>Video Recording</h3>
-        <video controls width="400">
-        <source src="team-introvideo.mp4" type="video/mp4" />
-        Your browser does not support the video element.
-        </video>
-    </section>
+      <h3>Audio Recording</h3>
+      <audio controls>
+      <source src="ad.m4a" type="audio/mp4" />
+      Your browser does not support the audio element.
+      </audio>
+  </section>
+
+  <section id="video">
+      <h3>Video Recording</h3>
+      <video controls width="400">
+      <source src="vd.mp4" type="video/mp4" />
+      Your browser does not support the video element.
+      </video>
+  </section>
     
     <section>
         <h3>Extra Tags</h3>
