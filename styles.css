@@ -1,0 +1,158 @@
+/* styles.css */
+
+/* 0.  Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* 1. globol val & fallback */
+:root {
+  --main-color: #3498db;
+  --fallback-color: orange;
+}
+
+/* 2.  Reset &basic */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(210, 50%, 95%); /* hsl */
+  font-family: 'Roboto', Arial, sans-serif;
+  margin: 1rem;             /* rem */
+  font-size: 16px;         
+}
+
+/* 3. header */
+header h1 {
+  color: var(--main-color, var(--fallback-color));
+  text-align: center;
+}
+
+/* 4. Footer */
+footer p {
+  font-size: 0.875rem;     
+  text-align: center;
+}
+
+/* 5. color */
+.color-demo {
+  /* rgb, rgba, hex, hsla */
+  background-color: rgb(255, 200, 200);
+  color: rgba(0, 100, 0, 0.8);
+  border: 2px solid #FF5733;    /* hex */
+  /* color-mix, wider gamut */
+  box-shadow: 0 0 5px color-mix(in srgb, cyan 50%, magenta 50%);
+}
+
+/* 6. unit exm */
+.unit-demo {
+  width: 50%;               /* % */
+  height: 10vh;             /* vh */
+  padding: 1em;             /* em */
+  margin: 10pt;             /* pt */
+  border: 1cm solid #333;   /* cm */
+}
+
+/* 7.box*/
+.box-demo {
+  /* long margin */
+  margin-top: 10px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  /* short & auto */
+  padding: 0.5rem 1rem 0.5rem 1rem; 
+  margin: auto;
+
+  /* border */
+  border-width: 2px;
+  border-style: dashed;
+  border-color: #666;
+  border-radius: 8px;
+}
+
+/* 8.text */
+.text-demo {
+  color: orange;            
+  text-decoration: underline;
+  text-align: justify;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  color: red;
+}
+
+/* 9. Display */
+.d-none { display: none; }
+.d-block { display: block; }
+.d-inline-block { display: inline-block; }
+.d-inline { display: inline; }
+
+/* 10.size */
+.size-demo {
+  width: 80%;          /* % */
+  max-width: 500px;     /* px */
+  min-width: 200px;     /* px */
+  height: 150px;        /* px */
+  background-color: #eef;
+}
+
+/* 11.location */
+.relative-demo {
+  position: relative;
+  left: 20px;
+}
+.absolute-demo {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* 12. Flexbox */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.flex-container > div {
+  background: #ddd;
+  padding: 0.5rem;
+}
+
+/* 13. Grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  gap: 0.5rem;
+}
+.grid-container > div {
+  background: #cfc;
+  padding: 0.5rem;
+}
+
+/* 14. media */
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* 15. button  */
+.btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: var(--main-color);
+  color: white;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: var(--fallback-color);
+}
+.btn:active {
+  transform: scale(0.95);
+}
