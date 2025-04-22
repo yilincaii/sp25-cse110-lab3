@@ -156,3 +156,88 @@ a:active {
 .btn:active {
   transform: scale(0.95);
 }
+
+/* 16. CSS Selectors  */
+
+
+/* Universal  */
+* {
+    outline: 1px dashed rgba(0,0,0,0.1);
+  }
+  
+  /* Element  */
+  h2 {
+    font-weight: bold;
+  }
+  
+  /* Class Selector */
+  .highlight {
+    background-color: yellow;
+  }
+  
+  /* ID  */
+  #main-header {
+    text-transform: uppercase;
+  }
+  
+  /* Attribute  */
+  input[type="text"] {
+    background-color: #f9f9f9;
+  }
+  
+  /* pseudo‑class  */
+  p:hover {
+    color: crimson;
+  }
+  
+  /* Selector List */
+  h1, h3 {
+    letter-spacing: 0.05em;
+  }
+  
+  /* Descendant Combinator */
+  .container p {
+    margin-left: 1rem;
+  }
+  
+  /* Child Combinator */
+  ul > li {
+    list-style-type: square;
+  }
+  
+  /* General sibling Combinator */
+  h2 ~ p {
+    opacity: 0.8;
+  }
+  
+  /* Adjacent sibling Combinator */
+  h2 + p {
+    font-style: italic;
+  }
+  
+  /* Combining Two Selectors */
+  button.primary {
+    background-color: teal;
+    color: #fff;
+  }
+  
+  /* New :has() Pseudo‑class */
+  article:has(img) {
+    border: 2px solid green;
+    padding: 1rem;
+  }
+  
+  /* Nested Selectors (CSS Nesting) */
+  .sidebar {
+    background: #eef;
+    padding: 1rem;
+  
+    & .sidebar-item {
+      margin-bottom: 0.5rem;
+  
+      &.active {
+        font-weight: bold;
+      }
+    }
+  }
+  
