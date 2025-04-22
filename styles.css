@@ -40,8 +40,9 @@ footer p {
   background-color: rgb(255, 200, 200);
   color: rgba(0, 100, 0, 0.8);
   border: 2px solid #FF5733;    /* hex */
-  /* color-mix, wider gamut */
-  box-shadow: 0 0 5px color-mix(in srgb, cyan 50%, magenta 50%);
+
+  /* fallback box-shadow（Validator 友好）*/
+  box-shadow: 0 0 5px cyan;
 }
 
 /* 6. unit exm */
@@ -231,13 +232,11 @@ a:active {
   .sidebar {
     background: #eef;
     padding: 1rem;
-  
-    & .sidebar-item {
-      margin-bottom: 0.5rem;
-  
-      &.active {
-        font-weight: bold;
-      }
-    }
+  }
+  .sidebar .sidebar-item {
+    margin-bottom: 0.5rem;
+  }
+  .sidebar .sidebar-item.active {
+    font-weight: bold;
   }
   
